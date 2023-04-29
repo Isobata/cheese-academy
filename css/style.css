@@ -1,0 +1,322 @@
+/*全体共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body {
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+/*パディングをサイズ内側にする処理*/
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+/*全体の横幅の調節と、中央ぞろえ*/
+.content {
+	width: 960px;
+	margin: auto;
+	text-align: center;
+}
+
+/*title*/
+
+/*タイトルの背景変更と色変更*/
+.title {
+	background: url(../img/mainbg.png);
+	background-size: cover;
+	background-position: center;
+	color: azure;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 400px;
+}
+
+/*タイトルの文字大きさ変更*/
+.title h1 {
+	font-size: 48px;
+	font-weight: bold;
+	margin: 0px 0px 40px 0px;
+}
+
+/*タイトル下の文字の大きさ変更*/
+.title p {
+	font-size: 36px;
+}
+
+/* header*/
+
+.header-wrapper {
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	font-size: 21px;
+	align-items: center;
+}
+
+.header-wrapper h1 {
+	font-size: 21px;
+}
+
+.nav-list {
+	display: flex;
+}
+
+.nav-item {
+	margin: 0 0 0 48px;
+}
+
+.nav-item>a {
+	color: #222222;
+	text-transform: uppercase;
+}
+
+/*about*/
+.about {
+	padding: 120px 0 64px;
+}
+
+.about_text {
+	margin: 0 0 24px;
+	color: #ffd61a;
+	font-weight: bold;
+}
+
+.about1 {
+	margin: 0 0 64px;
+}
+
+.about2,
+.about3,
+.about4 {
+	margin: 0px 0px 40px 0px;
+}
+
+.about5 {
+	margin: 0 0 80px;
+}
+
+.picture {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.picture img {
+	width: 25%;
+}
+
+/*course*/
+
+.course2 {
+	margin: 0 0 64px;
+}
+
+.course_h2 {
+	font-weight: bold;
+	margin: 0 0 24px;
+}
+
+.course1 {
+	margin: 0 0 64px;
+}
+
+/*コース内の３つの項目の表示*/
+.cheese_div,
+.farm_div,
+.black_div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fafafa;
+}
+
+/*コース内の３つの項目の画像とテキストの比率*/
+.cheese_div div,
+.black_div div,
+.farm_div div {
+	width: 50%;
+}
+
+/*コース内の見出しの文字設定*/
+.black1,
+.cheese1,
+.farm1 {
+	font-size: 24px;
+	color: #222222;
+}
+
+/*コース内の３つの画像の大きさ*/
+.cheese_div img,
+.black_div img,
+.farm_div img {
+	width: 100%;
+}
+
+
+.black1,
+.cheese1,
+.farm1 {
+	margin: 0 0 40px 48px;
+}
+
+.black2,
+.cheese2,
+.farm2 {
+	margin: 0 0 0 48px;
+	width: 420px;
+}
+
+
+
+/*news*/
+.news {
+	padding: 64px 48px;
+}
+
+.news_text {
+	color: #ffd61a;
+	margin: 0 0 64px;
+}
+
+ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60%;
+	margin: 0 auto 56px;
+
+}
+
+.more {
+	display: block;
+	width: 300px;
+	margin: auto;
+	padding: 21px 0;
+	background-color: #ffd61a;
+	color: #fff;
+	font-size: 21px;
+}
+
+
+
+.about,
+.course_div,
+.access,
+.contact,
+.more,
+.radio,
+.news {
+	display: flex;
+	align-items: center;
+	justify-self: center;
+	flex-direction: column;
+}
+
+
+
+/*access*/
+
+.access {
+	background-color: #fafafa;
+	padding: 64px 80px;
+}
+
+.access_h2 {
+	margin: 0 0 24px;
+}
+
+.access1 {
+	margin: 0 0 64px;
+}
+
+.access2 {
+	margin: 0 0 24px;
+}
+
+.map {
+	width: auto;
+	height: 56.25%;
+	margin: 0 0 64px;
+}
+
+/*contact*/
+.contact {
+	padding: 64px 80px;
+}
+
+.contact_h2 {
+	margin: 0 0 24px;
+	font-weight: bold;
+}
+
+
+
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #707070;
+}
+
+/**/
+.more {
+	display: flex;
+	align-items: center;
+	justify-self: center;
+}
+
+/*コンタクト記入欄の中央ぞろえ*/
+.name,
+.kana,
+.reason,
+.email,
+.discribe,
+.submit {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer {
+	padding: 32px 32px;
+}
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
